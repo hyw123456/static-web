@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+$h1: #44474B;
+
+@function rem($px) {
+  @return $px/(12*(750/375))+rem;
+}
+
+@mixin border-radius($value: 4px) {
+  border-radius: $value;
+  -moz-border-radius: $value;
+  -o-border-radius: $value;
+  -webkit-border-radius: $value;
+}
+
+body {
+  font-family: PingFang-SC-Regular,"Microsoft YaHei";
+  font-weight: 100;
+  font-size: rem(24);
+  color: #fff;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+html,
+body,
+div,
+p, h1 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: normal;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

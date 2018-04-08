@@ -1,0 +1,12 @@
+@import "init/init";
+#app{
+  background-color: gray;
+}
+
+.test{
+  img{
+    @include border-radius(50%);
+    width: rem(100);
+    height: rem(100);
+  }
+}
